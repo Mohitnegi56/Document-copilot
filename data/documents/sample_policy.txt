@@ -1,0 +1,18 @@
+Enterprise Knowledge Copilot — Sample Policy
+
+Remote Work Policy
+Employees may work remotely up to 3 days per week with manager approval.
+Core collaboration hours are 10:00 AM to 4:00 PM in the employee's local timezone.
+
+Leave Policy
+Annual paid leave: 20 days per calendar year.
+Sick leave: 10 days per year; unused sick leave does not roll over.
+
+Security Policy
+All company data must be stored in approved cloud drives only.
+Multi-factor authentication (MFA) is mandatory for all internal systems.
+Report security incidents to security@company.com within 24 hours.
+
+Onboarding
+New hires complete security training within the first week.
+IT equipment is shipped 5 business days before the start date.

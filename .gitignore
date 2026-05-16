@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+storage/faiss_index/
+.streamlit/
+*.faiss
+*.pkl
