@@ -43,7 +43,7 @@ Streamlit
 Python Dotenv
 
 ## 📂 Project Structure
-
+```
 Enterprise-Knowledge-Copilot/
 │── app.py
 │── config.py
@@ -65,7 +65,7 @@ Enterprise-Knowledge-Copilot/
 │
 └── storage/
     └── faiss_index/
-    
+```
 ## ⚙️ Installation
 1. Clone the Repository
 ```
@@ -114,47 +114,31 @@ What is the leave policy?
 Summarize this document.
 What are the key terms in the agreement?
 What technologies are mentioned?
+
 🔘 Sidebar Controls
 Build / Update Index
-
 Indexes the uploaded documents and adds them to the existing knowledge base.
-
 Rebuild from data/documents
-
 Recreates the vector index from all files stored in the documents folder.
-
 Clear Index
-
 Deletes the existing FAISS index and resets the knowledge base.
 
-🧠 How It Works
-Document Loading
-
+## 🧠 How It Works
+# Document Loading
 Documents are loaded using specialized loaders:
-
 PDF → PyPDFLoader
 DOCX → Docx2txtLoader
 TXT/MD → TextLoader
-Text Splitting
-
+# Text Splitting
 Documents are divided into overlapping chunks using RecursiveCharacterTextSplitter.
-
-Embeddings
-
+# Embeddings
 Each chunk is converted into vector embeddings using:
-
 sentence-transformers/all-MiniLM-L6-v2
-
-Vector Storage
-
+# Vector Storage
 Embeddings are stored in a persistent FAISS index.
-
-Retrieval
-
+# Retrieval
 Top-K similar chunks are retrieved for each user question.
-
-Answer Generation
-
+# Answer Generation
 Retrieved context is sent to a Groq-hosted LLM with a strict prompt instructing it to answer only from the provided context.
 
 ## 📦 Supported File Types
